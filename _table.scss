@@ -1,0 +1,45 @@
+.box-table{
+    margin-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: justify;
+    
+     td{
+    border-bottom: 1px solid black;
+     }   
+
+    .coin-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+        padding: 1rem;
+        
+        img{
+            width: 40px;
+        }
+        .coin-abbrName{
+            text-transform: uppercase;
+            color: rgb(105, 105, 105);
+        }
+    }
+    
+    .name-value{
+        width: 350px;
+    }
+    .price{
+        width: 200px;
+    }
+    .value-item{
+        width: 200px;
+    }
+
+   .more-coins{
+       width: 250px;
+       padding: 1rem;
+       
+       justify-content: center;
+   }
+}

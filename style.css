@@ -1,0 +1,139 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #040418;
+  height: 20vh;
+}
+nav .logo {
+  width: 110px;
+}
+nav .logo img {
+  width: 100%;
+}
+nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  color: #e0dada;
+}
+
+.box-table {
+  margin-inline: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  text-align: justify;
+}
+.box-table td {
+  border-bottom: 1px solid black;
+}
+.box-table .coin-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.box-table .coin-container img {
+  width: 40px;
+}
+.box-table .coin-container .coin-abbrName {
+  text-transform: uppercase;
+  color: dimgray;
+}
+.box-table .name-value {
+  width: 350px;
+}
+.box-table .price {
+  width: 200px;
+}
+.box-table .value-item {
+  width: 200px;
+}
+.box-table .more-coins {
+  width: 250px;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.presentation {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #3903f9;
+  background: linear-gradient(352deg, #3903f9 45%, #040418 70%);
+}
+.presentation .titles {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.presentation .titles h1 {
+  color: rgba(40, 40, 236, 0.966);
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.presentation .titles h2 {
+  font-size: 2rem;
+  width: 500px;
+  line-height: 3rem;
+  justify-self: center;
+  color: #fff;
+}
+.presentation .image-home-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.presentation .image-home-container .image-home {
+  width: 250px;
+  align-self: center;
+  border: 0;
+}
+.presentation .image-home-container .image-home img {
+  width: 100%;
+}
+.presentation button {
+  width: 250px;
+  height: 80px;
+  background-color: #080808;
+  border: 2px solid white;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.presentation button:hover {
+  width: 300px;
+  transition: 2s;
+  font-size: 2rem;
+  background-color: #fff;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body,
+html {
+  background-color: #fdfdfd;
+}
+
+/*# sourceMappingURL=style.css.map */

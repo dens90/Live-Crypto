@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <section>
+        <nav>
+          <div class="logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+          <div class="navigation">
+            <a href="#">News</a>
+            <a href="#">Price</a>
+          </div>
+          <div class="dati">
+            <a href="#">Accedi</a>
+            <a href="#">Registrati</a>
+          </div>
+        </nav>
+      </section>
+
+      <section>
+        <div class="presentation">
+          <div class="titles">
+            <h1>Welcome to LiveCrypto</h1>
+            <h2>
+              Here we help you to find your way for you investements <br />
+              width all news of <strong>crypto</strong> values and their trends
+            </h2>
+          </div>
+          <div class="image-home-container">
+               <div class="image-home">
+            <img src="./assets/vertical.jpeg" alt="" />
+          </div>
+          </div>
+         
+          <button>Scopri di più</button>
+        </div>
+      </section>
+      <!-- TABLE -->
+      <section>
+        <div class="box-table">
+          <table id="tab">
+            <thead>
+              <tr>
+                <th class="name-value">Nome</th>
+                <th class="price">Prezzo</th>
+                <th class="value-item">Variazione</th>
+                <th class="value-item">Volume(24 h)</th>
+                <th class="value-item">Capitalizzazione mercato</th>
+                <th class="value-item">Offerta</th>
+              </tr>
+            </thead>
+            <tbody id="tab-body"></tbody>
+            
+          </table>
+          
+        </div>
+        <button class="more-coins">Load More</button>
+      </section>
+    </header>
+    <script src="main.js"></script>
+  </body>
+</html>
