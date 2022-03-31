@@ -30,11 +30,16 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: Lato, serif;
     font-weight: 900;
     background: #0000005c;
     padding: 1rem;
+    text-align: center;
     border-radius: 15px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
   }
 }
