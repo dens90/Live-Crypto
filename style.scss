@@ -7,11 +7,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
 }
 body,
 html {
   background-color: #fdfdfd;
+}
+
+.header-container{
+  background-image: url(./assets/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
 }
