@@ -18,7 +18,7 @@ fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=mark
             <p class="coin-abbrName">${coin.symbol}</p>
         </div>
     </td>
-    <td><p class="price coin-name">${coin.current_price} €</p></td>
+    <td><p class="price coin-name"><b>${coin.current_price} €</b></p></td>
     <td><p class="value-item coin-name">${coin.ath_change_percentage} %</p></td>
     <td><p class="value-item coin-name">${coin.high_24h} €</p></td>
     <td><p class="value-item coin-name">${coin.market_cap} €</p></td>

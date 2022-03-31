@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
 nav {
   width: 100%;
   display: flex;
@@ -133,7 +134,7 @@ thead:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inconsolata", monospace;
+  font-family: "Lato", serif;
 }
 
 body,
@@ -149,6 +150,20 @@ html {
   width: 100%;
   height: 400px;
   margin-bottom: 2rem;
+  position: relative;
+}
+.header-container .heading-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-family: Lato, serif;
+  font-weight: 900;
+  background: #0000005c;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
