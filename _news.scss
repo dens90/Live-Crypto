@@ -1,0 +1,50 @@
+
+.container{
+
+margin-inline: 4rem;
+
+
+
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    
+
+
+.card{
+    width: 300px;
+    text-align: justify;
+    margin: 2rem;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: rgba(172, 172, 174, 0.307);
+    img{
+        padding: .5rem;
+        width: 100%;
+        
+    }
+
+h1{
+    color: blue;
+    font-size: 20px;
+    padding: .5rem;
+}
+
+   
+    article{
+
+        font-size: bold;
+    color: #111;
+    padding: .5rem;
+    }
+}   
+
+
+}
+
+
+
+}
+
+
