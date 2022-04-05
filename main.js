@@ -27,7 +27,9 @@ function fetchData(pageIndexValue = 1) {
   // prima di fare il fetch chiamiamo l'animazione di caricamento
   loadingIndicator()
   // nel fetch la pagina sarà dinamicamente aggiornata tramite la variabile pageIndexValue
-  fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=20&page=${pageIndexValue}&sparkline=false`, {cache: "no-cache"})
+  fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=20&page=${pageIndexValue}&sparkline=false`, {
+    cache: "no-cache"
+  })
     .then((response) => response.json())
     .then((data) => {
       this.criptoInfo = data;
@@ -37,6 +39,10 @@ function fetchData(pageIndexValue = 1) {
       let cripto = coinMap.map((coin) => {
         // ora abbiamo ricevuto i dati, quindi possiamo nascondere di nuovo il caricamento
         hideLoadingIndicator()
+
+        // se il dato è null lo trasformiamo in un testo più leggibile
+        let getTotalSupply = coin.total_supply;
+        let totSupply = getTotalSupply ? getTotalSupply + ' €' : "Non Definito"
 
         let tr = document.createElement("tr");
         tableBody.appendChild(tr);
@@ -51,7 +57,7 @@ function fetchData(pageIndexValue = 1) {
     <td><p class="value-item coin-name">${coin.ath_change_percentage} %</p></td>
     <td><p class="value-item coin-name">${coin.high_24h} €</p></td>
     <td><p class="value-item coin-name">${coin.market_cap} €</p></td>
-    <td><p class="value-item coin-name">${coin.total_supply} €</p></td>
+    <td><p class="value-item coin-name">${totSupply}</p></td>
     `;
       });
     });
