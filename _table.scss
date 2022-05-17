@@ -6,11 +6,22 @@
   margin: 1rem;
   text-align: justify;
 
+  .th {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .th-1 {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 4rem;
+  }
   .coin-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 1rem;
 
     img {
@@ -41,13 +52,14 @@
 
     justify-content: center;
   }
-}
-thead:after {
-  content: "@";
-  display: block;
-  line-height: 30px;
-  text-indent: -99999px;
-}
-#tab-body > tr {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+  thead:after {
+    content: "@";
+    display: block;
+    line-height: 30px;
+    text-indent: -99999px;
+  }
+  #tab-body > tr {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
 }

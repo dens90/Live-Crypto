@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto+Mono:wght@300&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-<header>
-  <div class="container">
-    <div class="header-container">
-      <div class="heading-title">
-        <h1>Marco e Dennis Crypto App</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi culpa dolorem eius, expedita maxime nisi placeat praesentium repellat repudiandae.</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="heading-title">
+            <h1>Crypto App</h1>
+            <h3>
+              Tutte le info che ti servono per investire sulle crypto valute
+              aggiornate ogni 24 h
+            </h3>
+            <button
+              class="news-index"
+              onclick="window.location.href='./news.html'"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
-<div>
-  <button onclick="window.location.href='./news.html'">Continue</button>
-</div>
+    </header>
+    <div></div>
 
-<!-- TABLE -->
-<section>
-  <div class="box-table">
-    <table id="tab">
-      <thead id="table-head">
-      <tr>
-        <th class="name-value">Nome</th>
-        <th class="price">Prezzo</th>
-        <th class="value-item">Variazione</th>
-        <th class="value-item">Volume(24 h)</th>
-        <th class="value-item">Capitalizzazione mercato</th>
-        <th class="value-item">Offerta</th>
-      </tr>
-      </thead>
-      <tbody id="tab-body"></tbody>
-    </table>
-  </div>
-  <div class="boxloading">
-    <div class="loading" id="loading"></div>
-  </div>
-  <div class="box-table load-more-button">
-    <button id="load-more">Load More</button>
-  </div>
-
-</section>
-<script src="main.js"></script>
-</body>
+    <!-- TABLE -->
+    <section>
+      <div class="box-table">
+        <table id="tab">
+          <thead id="table-head">
+            <tr>
+              <th class="name-value th-1">Nome</th>
+              <th class="price th">Prezzo</th>
+              <th class="value-item th">Variazione</th>
+              <th class="value-item th">Volume(24 h)</th>
+              <th class="value-item th">Capitalizzazione mercato</th>
+              <th class="value-item th">Offerta</th>
+            </tr>
+          </thead>
+          <tbody id="tab-body"></tbody>
+        </table>
+      </div>
+      <div class="boxloading">
+        <div class="loading" id="loading"></div>
+      </div>
+      <div class="box-table load-more-button">
+        <button id="load-more">Load More</button>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>

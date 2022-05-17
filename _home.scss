@@ -34,38 +34,35 @@
     }
   }
 
-  .image-home-container{
-      width: 50%;
-      display: flex;;
-      justify-content: center;
- .image-home {
-    width: 250px;
-    align-self: center;
-    border: 0;
+  .image-home-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    .image-home {
+      width: 250px;
+      align-self: center;
+      border: none;
 
-    img {
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
-  }
- 
   }
   button {
     width: 250px;
     height: 80px;
     background-color: rgba(8, 8, 8);
-    border: 2px solid white;
+    border: none solid white;
     margin-bottom: 1rem;
-    border-radius: 30px;
+    border-radius: 5px;
     font-size: 1.6rem;
     color: #fff;
-    &:hover{
-    width: 300px;    
-    transition: 2s;
-    font-size: 2rem;
-    background-color: #fff;
-    color: black;
-}
-
+    &:hover {
+      width: 300px;
+      transition: 2s;
+      font-size: 2rem;
+      background-color: #fff;
+      color: black;
+    }
   }
-
 }

@@ -1,35 +1,38 @@
 // stabiliamo che la pagina iniziale sarà la pagina 1
-let pageIndex = 1
+let pageIndex = 1;
 
 let tableBody = document.getElementById("tab-body");
-let loader = document.getElementById('loading')
+let loader = document.getElementById("loading");
 
 // creiamo una funzione per richiamare l'animazione di caricamento
 function loadingIndicator() {
-  loader.classList.add('display')
+  loader.classList.add("display");
   setTimeout(() => {
-    loader.classList.remove('display')
-  }, 4000)
+    loader.classList.remove("display");
+  }, 4000);
 }
 
 // creiamo una funzione per nascondere l'icona di caricamento
 function hideLoadingIndicator() {
-  loader.classList.remove('display')
+  loader.classList.remove("display");
 }
 
 // ad ogni click del bottone, incrementiamo il valore della variabile pageIndex di 1
 const loadMoreButton = document.getElementById("load-more");
 loadMoreButton.addEventListener("click", () => {
-  fetchData(pageIndex++)
+  fetchData(pageIndex++);
 });
 
 function fetchData(pageIndexValue = 1) {
   // prima di fare il fetch chiamiamo l'animazione di caricamento
-  loadingIndicator()
+  loadingIndicator();
   // nel fetch la pagina sarà dinamicamente aggiornata tramite la variabile pageIndexValue
-  fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=20&page=${pageIndexValue}&sparkline=false`, {
-    cache: "no-cache"
-  })
+  fetch(
+    `https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=20&page=${pageIndexValue}&sparkline=false`,
+    {
+      cache: "no-cache",
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       this.criptoInfo = data;
@@ -38,11 +41,11 @@ function fetchData(pageIndexValue = 1) {
     .then((coinMap) => {
       let cripto = coinMap.map((coin) => {
         // ora abbiamo ricevuto i dati, quindi possiamo nascondere di nuovo il caricamento
-        hideLoadingIndicator()
+        hideLoadingIndicator();
 
         // se il dato è null lo trasformiamo in un testo più leggibile
         let getTotalSupply = coin.total_supply;
-        let totSupply = getTotalSupply ? getTotalSupply + ' €' : "Non Definito"
+        let totSupply = getTotalSupply ? getTotalSupply + " €" : "Non Definito";
 
         let tr = document.createElement("tr");
         tableBody.appendChild(tr);
@@ -63,7 +66,4 @@ function fetchData(pageIndexValue = 1) {
     });
 }
 
-fetchData(pageIndex++)
-
-
-
+fetchData(pageIndex++);
